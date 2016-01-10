@@ -36,13 +36,13 @@ inoremap <silent> <End>  <C-o>g<End>
 " Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" " SuperTab like snippets behavior.
-imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
- \ "\<Plug>(neosnippet_expand_or_jump)"
- \: pumvisible() ? "\<C-n>" : "\<TAB>"
-smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
- \ "\<Plug>(neosnippet_expand_or_jump)"
- \: "\<TAB>"
+" Easy Motion.
+map     /   <Plug>(easymotion-sn)
+omap    /   <Plug>(easymotion-tn)
+
+" Clear highlighting on escape in Normal Mode.
+nnoremap <silent>   <ESC>   :noh<CR><ESC>
+nnoremap            <ESC>^[ <ESC>^[
 
 " NERDTree
 nmap <F6> :NERDTreeToggle<CR>
@@ -53,3 +53,6 @@ nmap <F7> :GundoToggle<CR>
 " TAGBAR
 nmap <F8> :TagbarToggle<CR>
 
+" Vim Better Whitespace.
+nmap    <Leader>sws :StripWhitespace<CR>
+nmap    <Leader>tws :ToggleWhitespace<CR>
