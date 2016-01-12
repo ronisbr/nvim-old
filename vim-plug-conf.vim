@@ -15,6 +15,9 @@ Plug 'easymotion/vim-easymotion'
 " Mundo.
 Plug 'simnalamburt/vim-mundo'
 
+" NERDTree.
+Plug 'scrooloose/nerdtree'
+
 " Julia.
 Plug 'JuliaLang/julia-vim'
 
