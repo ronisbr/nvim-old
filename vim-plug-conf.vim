@@ -15,6 +15,9 @@ Plug 'easymotion/vim-easymotion'
 " Mundo.
 Plug 'simnalamburt/vim-mundo'
 
+" Multiple cursors.
+Plug 'terryma/vim-multiple-cursors'
+
 " NERDTree.
 Plug 'scrooloose/nerdtree'
 
