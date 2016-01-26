@@ -20,11 +20,53 @@ $2
 
 * $4
 
+##### Info
+
+* **Author**: Ronan Arraes Jardim Chagas
+* **Date**: $5
+
 """
 
 endsnippet
 
-snippet jlcna "Julia function comment with no args"
+snippet jlcni "Julia function comment without info"
+"""
+### function $1
+
+$2
+
+##### Args
+
+* $3
+
+##### Returns
+
+* $4
+
+"""
+
+endsnippet
+
+snippet jlcna "Julia function comment without args"
+"""
+### function $1
+
+$2
+
+##### Returns
+
+* $3
+
+##### Info
+
+* **Author**: Ronan Arraes Jardim Chagas
+* **Date**: $4
+
+"""
+
+endsnippet
+
+snippet jlcnai "Julia function comment without args and info"
 """
 ### function $1
 
@@ -38,7 +80,26 @@ $2
 
 endsnippet
 
-snippet jlcnr "Julia function comment with no returns"
+snippet jlcnr "Julia function comment without returns"
+"""
+### function $1
+
+$2
+
+##### Args
+
+* $3
+
+##### Info
+
+* **Author**: Ronan Arraes Jardim Chagas
+* **Date**: $4
+
+"""
+
+endsnippet
+
+snippet jlcnri "Julia function comment without returns and info"
 """
 ### function $1
 
@@ -52,7 +113,22 @@ $2
 
 endsnippet
 
-snippet jlcnar "Julia function comment with no args and no returns"
+snippet jlcnar "Julia function comment without args and returns"
+"""
+### function $1
+
+$2
+
+##### Info
+
+* **Author**: Ronan Arraes Jardim Chagas
+* **Date**: $4
+
+"""
+
+endsnippet
+
+snippet jlcnari "Julia function comment without args, returns, and info"
 """
 ### function $1
 
