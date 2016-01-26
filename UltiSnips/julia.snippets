@@ -8,7 +8,7 @@
 
 snippet jlc "Julia function comment"
 """
-### function $1
+### $1
 
 $2
 
@@ -22,8 +22,8 @@ $2
 
 ##### Info
 
-* **Author**: Ronan Arraes Jardim Chagas
-* **Date**: $5
+* **Author**: ${5:Ronan Arraes Jardim Chagas}
+* **Date**: ${6:`date +%Y-%m-%d`}
 
 """
 
@@ -31,7 +31,7 @@ endsnippet
 
 snippet jlcni "Julia function comment without info"
 """
-### function $1
+### $1
 
 $2
 
@@ -49,7 +49,7 @@ endsnippet
 
 snippet jlcna "Julia function comment without args"
 """
-### function $1
+### $1
 
 $2
 
@@ -59,8 +59,8 @@ $2
 
 ##### Info
 
-* **Author**: Ronan Arraes Jardim Chagas
-* **Date**: $4
+* **Author**: ${4:Ronan Arraes Jardim Chagas}
+* **Date**: ${5:`date +%Y-%m-%d`}
 
 """
 
@@ -68,7 +68,7 @@ endsnippet
 
 snippet jlcnai "Julia function comment without args and info"
 """
-### function $1
+### $1
 
 $2
 
@@ -82,7 +82,7 @@ endsnippet
 
 snippet jlcnr "Julia function comment without returns"
 """
-### function $1
+### $1
 
 $2
 
@@ -92,8 +92,8 @@ $2
 
 ##### Info
 
-* **Author**: Ronan Arraes Jardim Chagas
-* **Date**: $4
+* **Author**: ${4:Ronan Arraes Jardim Chagas}
+* **Date**: ${5:`date +%Y-%m-%d`}
 
 """
 
@@ -101,7 +101,7 @@ endsnippet
 
 snippet jlcnri "Julia function comment without returns and info"
 """
-### function $1
+### $1
 
 $2
 
@@ -115,14 +115,14 @@ endsnippet
 
 snippet jlcnar "Julia function comment without args and returns"
 """
-### function $1
+### $1
 
 $2
 
 ##### Info
 
-* **Author**: Ronan Arraes Jardim Chagas
-* **Date**: $4
+* **Author**: ${3:Ronan Arraes Jardim Chagas}
+* **Date**: ${4:`date +%Y-%m-%d`}
 
 """
 
@@ -130,7 +130,7 @@ endsnippet
 
 snippet jlcnari "Julia function comment without args, returns, and info"
 """
-### function $1
+### $1
 
 $2
 
