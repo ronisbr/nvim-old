@@ -8,11 +8,27 @@
 
 snippet jlc "Julia function comment"
 """
-$1
+### function $1
+
+$2
 
 ##### Args
 
-* $2
+* $3
+
+##### Returns
+
+* $4
+
+"""
+
+endsnippet
+
+snippet jlcna "Julia function comment with no args"
+"""
+### function $1
+
+$2
 
 ##### Returns
 
@@ -22,25 +38,15 @@ $1
 
 endsnippet
 
-snippet jlcna "Julia function comment with no args"
-"""
-$1
-
-##### Returns
-
-* $2
-
-"""
-
-endsnippet
-
 snippet jlcnr "Julia function comment with no returns"
 """
-$1
+### function $1
+
+$2
 
 ##### Args
 
-* $2
+* $3
 
 """
 
@@ -48,7 +54,9 @@ endsnippet
 
 snippet jlcnar "Julia function comment with no args and no returns"
 """
-$1
+### function $1
+
+$2
 
 """
 
