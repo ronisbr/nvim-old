@@ -42,6 +42,9 @@ Plug 'honza/vim-snippets'
 " Vim Better Whitespace.
 Plug 'ntpeters/vim-better-whitespace'
 
+" vim-clang
+Plug 'justmao945/vim-clang'
+
 " vim-latex.
 Plug 'vim-latex/vim-latex'
 
