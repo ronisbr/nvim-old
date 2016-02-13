@@ -3,6 +3,9 @@ call plug#begin('~/.nvim/plugged')
 " Airline.
 Plug 'bling/vim-airline'
 
+" Airline themes.
+Plug 'vim-airline/vim-airline-themes'
+
 " CtrlP.
 Plug 'kien/ctrlp.vim'
 
