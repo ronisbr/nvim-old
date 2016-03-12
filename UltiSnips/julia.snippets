@@ -3,19 +3,53 @@
 ################################################################################
 
 ################################################################################
+# Global
+################################################################################
+
+global !p
+"""
+Function to remove all spaces and line breaks from the function definition.
+"""
+def julia_func_decl_oneline(func_decl):
+    return re.sub( '\s+', ' ', func_decl).strip()
+
+"""
+Function to separate the arguments of the function definition.
+"""
+def get_julia_args(func_decl):
+    # Remove all spaces and line breaks from the function definition.
+    line   = julia_func_decl_oneline(func_decl)
+
+    # Remove everything between {}.
+    linep  = re.sub('{[^>]+}', '', line)
+
+    # Tokenize the arguments.
+    args   = ((linep.split('(',1)[1]).split(')',1)[0]).split(',')
+
+    # Organize the arguments.
+    output = ""
+    if (len(args) > 1) or ( (len(args) == 1) and (len(args[0]) > 0) ):
+        for a in args:
+            output += "* " + a.split('::',1)[0].strip() + ": \n"
+    else:
+	    output += "\n"
+
+    return output
+endglobal
+
+################################################################################
 # Function comments.
 ################################################################################
 
 snippet jlc "Julia function comment"
 """
-### $1`!p snip.rv = re.sub( '\s+', ' ', snip.v.text ).strip()`
+### $1`!p snip.rv = julia_func_decl_oneline(snip.v.text)`
 
 $2
 
 ##### Args
 
-* $3
-
+$3`!p snip.rv = get_julia_args(snip.v.text)`
 ##### Returns
 
 * $4
@@ -32,14 +66,13 @@ endsnippet
 
 snippet jlcni "Julia function comment without info"
 """
-### $1`!p snip.rv = re.sub( '\s+', ' ', snip.v.text ).strip()`
+### $1`!p snip.rv = julia_func_decl_oneline(snip.v.text)`
 
 $2
 
 ##### Args
 
-* $3
-
+$3`!p snip.rv = get_julia_args(snip.v.text)`
 ##### Returns
 
 * $4
@@ -51,7 +84,7 @@ endsnippet
 
 snippet jlcna "Julia function comment without args"
 """
-### $1`!p snip.rv = re.sub( '\s+', ' ', snip.v.text ).strip()`
+### $1`!p snip.rv = julia_func_decl_oneline(snip.v.text)`
 
 $2
 
@@ -71,7 +104,7 @@ endsnippet
 
 snippet jlcnai "Julia function comment without args and info"
 """
-### $1`!p snip.rv = re.sub( '\s+', ' ', snip.v.text ).strip()`
+### $1`!p snip.rv = julia_func_decl_oneline(snip.v.text)`
 
 $2
 
@@ -86,14 +119,13 @@ endsnippet
 
 snippet jlcnr "Julia function comment without returns"
 """
-### $1`!p snip.rv = re.sub( '\s+', ' ', snip.v.text ).strip()`
+### $1`!p snip.rv = julia_func_decl_oneline(snip.v.text)`
 
 $2
 
 ##### Args
 
-* $3
-
+$3`!p snip.rv = get_julia_args(snip.v.text)`
 ##### Info
 
 * **Author**: ${4:Ronan Arraes Jardim Chagas}
@@ -106,21 +138,20 @@ endsnippet
 
 snippet jlcnri "Julia function comment without returns and info"
 """
-### $1`!p snip.rv = re.sub( '\s+', ' ', snip.v.text ).strip()`
+### $1`!p snip.rv = julia_func_decl_oneline(snip.v.text)`
 
 $2
 
 ##### Args
 
-* $3
-
+$3`!p snip.rv = get_julia_args(snip.v.text)`
 """
 
 endsnippet
 
 snippet jlcnar "Julia function comment without args and returns"
 """
-### $1`!p snip.rv = re.sub( '\s+', ' ', snip.v.text ).strip()`
+### $1`!p snip.rv = julia_func_decl_oneline(snip.v.text)`
 
 $2
 
@@ -136,7 +167,7 @@ endsnippet
 
 snippet jlcnari "Julia function comment without args, returns, and info"
 """
-### $1`!p snip.rv = re.sub( '\s+', ' ', snip.v.text ).strip()`
+### $1`!p snip.rv = julia_func_decl_oneline(snip.v.text)`
 
 $2
 
