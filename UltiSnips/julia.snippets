@@ -8,7 +8,7 @@
 
 snippet jlc "Julia function comment"
 """
-### $1
+### $1`!p snip.rv = re.sub( '\s+', ' ', snip.v.text ).strip()`
 
 $2
 
@@ -27,11 +27,12 @@ $2
 
 """
 
+${VISUAL}$0
 endsnippet
 
 snippet jlcni "Julia function comment without info"
 """
-### $1
+### $1`!p snip.rv = re.sub( '\s+', ' ', snip.v.text ).strip()`
 
 $2
 
@@ -45,11 +46,12 @@ $2
 
 """
 
+${VISUAL}$0
 endsnippet
 
 snippet jlcna "Julia function comment without args"
 """
-### $1
+### $1`!p snip.rv = re.sub( '\s+', ' ', snip.v.text ).strip()`
 
 $2
 
@@ -64,11 +66,12 @@ $2
 
 """
 
+${VISUAL}$0
 endsnippet
 
 snippet jlcnai "Julia function comment without args and info"
 """
-### $1
+### $1`!p snip.rv = re.sub( '\s+', ' ', snip.v.text ).strip()`
 
 $2
 
@@ -78,11 +81,12 @@ $2
 
 """
 
+${VISUAL}$0
 endsnippet
 
 snippet jlcnr "Julia function comment without returns"
 """
-### $1
+### $1`!p snip.rv = re.sub( '\s+', ' ', snip.v.text ).strip()`
 
 $2
 
@@ -97,11 +101,12 @@ $2
 
 """
 
+${VISUAL}$0
 endsnippet
 
 snippet jlcnri "Julia function comment without returns and info"
 """
-### $1
+### $1`!p snip.rv = re.sub( '\s+', ' ', snip.v.text ).strip()`
 
 $2
 
@@ -115,7 +120,7 @@ endsnippet
 
 snippet jlcnar "Julia function comment without args and returns"
 """
-### $1
+### $1`!p snip.rv = re.sub( '\s+', ' ', snip.v.text ).strip()`
 
 $2
 
@@ -126,16 +131,18 @@ $2
 
 """
 
+${VISUAL}$0
 endsnippet
 
 snippet jlcnari "Julia function comment without args, returns, and info"
 """
-### $1
+### $1`!p snip.rv = re.sub( '\s+', ' ', snip.v.text ).strip()`
 
 $2
 
 """
 
+${VISUAL}$0
 endsnippet
 
 # vim:ft=snippets:
