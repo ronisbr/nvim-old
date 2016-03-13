@@ -15,6 +15,9 @@ Plug 'Shougo/deoplete.nvim'
 " Easy Motion.
 Plug 'easymotion/vim-easymotion'
 
+" Fugitive.vim
+Plug 'tpope/vim-fugitive'
+
 " Mundo.
 Plug 'simnalamburt/vim-mundo'
 
