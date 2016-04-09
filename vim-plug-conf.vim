@@ -33,6 +33,9 @@ Plug 'JuliaLang/julia-vim'
 " Rainbow.
 Plug 'luochen1990/rainbow'
 
+" Theme: base16
+Plug 'chriskempson/base16-vim'
+
 " Theme: janah
 Plug 'mhinz/vim-janah'
 
