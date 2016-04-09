@@ -4,7 +4,6 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Theme: base16
-"autocmd ColorScheme janah highlight Normal ctermbg=235
 let base16colorspace=256
 colorscheme base16-default
 set background=dark
