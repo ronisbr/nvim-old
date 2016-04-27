@@ -20,11 +20,8 @@ endif
 set colorcolumn=+1
 highlight colorcolumn ctermbg=236 guibg=#282828
 
-"highlight clear CursorLine
-"highlight CursorLine ctermbg=236
-
 " Set spell bad highlight.
 highlight clear SpellBad
-highlight SpellBad cterm=underline,bold ctermfg=red
+highlight SpellBad gui=underline,bold guifg=red
 highlight clear SpellCap
-highlight SpellCap cterm=underline,bold ctermfg=blue
+highlight SpellCap gui=underline,bold guifg=royalblue
