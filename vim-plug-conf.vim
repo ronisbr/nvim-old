@@ -54,6 +54,9 @@ Plug 'ntpeters/vim-better-whitespace'
 " vim-clang
 Plug 'justmao945/vim-clang'
 
+" vim-grepper
+Plug 'mhinz/vim-grepper'
+
 " vim-latex.
 Plug 'vim-latex/vim-latex'
 
