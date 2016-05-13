@@ -48,7 +48,7 @@ nnoremap            <ESC>^[ <ESC>^[
 nmap <F6> :NERDTreeToggle<CR>
 
 " GUndo
-nmap <F7> :GundoToggle<CR>
+nmap <F7> :MundoToggle<CR>
 
 " TAGBAR
 nmap <F8> :TagbarToggle<CR>
