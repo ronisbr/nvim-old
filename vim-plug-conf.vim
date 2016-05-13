@@ -66,4 +66,7 @@ Plug 'dhruvasagar/vim-table-mode'
 " Vim Wiki.
 Plug 'vimwiki/vimwiki'
 
+" YankRing.
+Plug 'vim-scripts/YankRing.vim'
+
 call plug#end()

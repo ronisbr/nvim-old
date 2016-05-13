@@ -44,6 +44,9 @@ omap    /   <Plug>(easymotion-tn)
 nnoremap <silent>   <ESC>   :noh<CR><ESC>
 nnoremap            <ESC>^[ <ESC>^[
 
+" YankRing
+nmap <F5> :YRShow<CR>
+
 " NERDTree
 nmap <F6> :NERDTreeToggle<CR>
 
