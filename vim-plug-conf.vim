@@ -21,9 +21,6 @@ Plug 'tpope/vim-fugitive'
 " lldb.nvim
 Plug 'critiqjo/lldb.nvim'
 
-" indentLine
-Plug 'Yggdroot/indentLine'
-
 " Mundo.
 Plug 'simnalamburt/vim-mundo'
 
