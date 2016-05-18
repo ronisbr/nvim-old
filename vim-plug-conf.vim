@@ -18,6 +18,9 @@ Plug 'easymotion/vim-easymotion'
 " Fugitive.vim
 Plug 'tpope/vim-fugitive'
 
+" lldb.nvim
+Plug 'critiqjo/lldb.nvim'
+
 " Mundo.
 Plug 'simnalamburt/vim-mundo'
 
