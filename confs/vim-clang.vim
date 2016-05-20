@@ -14,5 +14,5 @@ let g:clang_complete_auto = 0
 let g:clang_auto_select = 0
 let g:clang_omnicppcomplete_compliance = 0
 let g:clang_make_default_keymappings = 0
-let g:clang_c_completeopt   = 'longest,menuone,preview'
-let g:clang_cpp_completeopt = 'longest,menuone,preview'
+let g:clang_c_completeopt   = 'menuone,preview,noinsert,noselect'
+let g:clang_cpp_completeopt = 'menuone,preview,noinsert,noselect'
