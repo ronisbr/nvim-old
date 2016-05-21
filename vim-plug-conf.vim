@@ -15,6 +15,9 @@ Plug 'Shougo/deoplete.nvim'
 " Easy Motion.
 Plug 'easymotion/vim-easymotion'
 
+" Easy Align.
+Plug 'junegunn/vim-easy-align'
+
 " Fugitive.vim
 Plug 'tpope/vim-fugitive'
 
