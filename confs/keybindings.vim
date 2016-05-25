@@ -36,10 +36,6 @@ inoremap <silent> <End>  <C-o>g<End>
 " Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" Easy Motion.
-map     /   <Plug>(easymotion-sn)
-omap    /   <Plug>(easymotion-tn)
-
 " Clear highlighting on escape in Normal Mode.
 nnoremap <silent>   <ESC>   :noh<CR><ESC>
 nnoremap            <ESC>^[ <ESC>^[

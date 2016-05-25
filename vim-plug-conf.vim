@@ -12,9 +12,6 @@ Plug 'kien/ctrlp.vim'
 " Deoplete.
 Plug 'Shougo/deoplete.nvim'
 
-" Easy Motion.
-Plug 'easymotion/vim-easymotion'
-
 " Easy Align.
 Plug 'junegunn/vim-easy-align'
 
@@ -38,6 +35,9 @@ Plug 'JuliaLang/julia-vim'
 
 " Rainbow.
 Plug 'luochen1990/rainbow'
+
+" Sneak.
+Plug 'justinmk/vim-sneak'
 
 " Theme: base16
 Plug 'chriskempson/base16-vim'
