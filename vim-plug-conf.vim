@@ -18,9 +18,6 @@ Plug 'junegunn/vim-easy-align'
 " Fugitive.vim
 Plug 'tpope/vim-fugitive'
 
-" indentLine
-Plug 'Yggdroot/indentLine'
-
 " lldb.nvim
 Plug 'critiqjo/lldb.nvim'
 
