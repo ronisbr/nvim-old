@@ -8,7 +8,7 @@ let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
 " Theme: base16
 let base16colorspace=256
-colorscheme base16-default
+colorscheme base16-default-dark
 set background=dark
 
 " Font for GUI
