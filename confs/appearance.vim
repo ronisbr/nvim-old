@@ -4,7 +4,7 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Set true color.
-let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+set termguicolors
 
 " Theme: base16
 let base16colorspace=256
