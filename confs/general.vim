@@ -43,6 +43,10 @@ set cursorline
 set ignorecase
 set smartcase
 
+" More natural splits.
+set splitbelow
+set splitright
+
 " This unset the "last search pattern" register by hitting return after a
 " search.
 " nnoremap    <silent>    <CR>    :call HLNextOff()<CR>:nohlsearch<CR>
