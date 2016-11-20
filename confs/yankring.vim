@@ -1,3 +1,8 @@
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Configuration for yankring
+"
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-            let g:yankring_replace_n_pkey = '<m-p>'
-            let g:yankring_replace_n_nkey = '<m-n>'
+let g:yankring_replace_n_pkey    = '<M-p>'
+let g:yankring_replace_n_nkey    = '<M-n>'
+let g:yankring_clipboard_monitor = 0
