@@ -6,6 +6,9 @@ Plug 'bling/vim-airline'
 " Airline themes.
 Plug 'vim-airline/vim-airline-themes'
 
+" Ag.vim
+Plug 'rking/ag.vim'
+
 " CtrlP.
 Plug 'kien/ctrlp.vim'
 
