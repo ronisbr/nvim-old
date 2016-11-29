@@ -58,6 +58,9 @@ Plug 'SirVer/ultisnips'
 " UltiSnips (Snippets).
 Plug 'honza/vim-snippets'
 
+" Vala.vim.
+Plug 'arrufat/vala.vim'
+
 " Vim Better Whitespace.
 Plug 'ntpeters/vim-better-whitespace'
 
