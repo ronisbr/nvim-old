@@ -18,9 +18,9 @@ if dein#load_state(expand('~/.nvim/dein'))
     call dein#add('tpope/vim-fugitive')
     call dein#add('vim-airline/vim-airline')
     call dein#add('vim-airline/vim-airline-themes')
+    call dein#add('vim-scripts/YankRing.vim')
 
     " Plugins with lazy load.
-
     call dein#add('ctrlpvim/ctrlp.vim',
                 \ { 'hook_post_source': 'source ~/.nvim/config_lazy/ctrlp.vim',
                 \   'on_cmd':           'CtrlP'})
@@ -38,10 +38,6 @@ if dein#load_state(expand('~/.nvim/dein'))
     call dein#add('vim-latex/vim-latex',
                 \ { 'hook_source':      'source ~/.nvim/config_lazy/vim-latex.vim',
                 \   'on_ft':            ['bibtex', 'tex', 'plaintex']})
-
-    call dein#add('vim-scripts/YankRing.vim',
-                \ { 'hook_post_source': 'source ~/.nvim/config_lazy/yankring.vim',
-                \   'on_cmd':           'YRShow'})
 
     call dein#end()
 
