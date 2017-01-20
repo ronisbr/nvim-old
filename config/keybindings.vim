@@ -73,3 +73,6 @@ let  g:DVB_TrimWS = 1
 " Plugin: vim-better-whitespace.
 nmap <Leader>sws :StripWhitespace<CR>
 nmap <Leader>tws :ToggleWhitespace<CR>
+
+" Plugin: vim-rooter
+nmap <Leader>cd :Rooter<CR>

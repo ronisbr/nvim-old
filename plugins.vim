@@ -6,6 +6,7 @@ let g:dein#enable_notification = 1
 if dein#load_state(expand('~/.nvim/dein'))
     call dein#begin(expand('~/.nvim/dein'))
 
+    call dein#add('airblade/vim-rooter')
     call dein#add('chriskempson/base16-vim')
     call dein#add('JuliaEditorSupport/julia-vim')
     call dein#add('justinmk/vim-sneak')
