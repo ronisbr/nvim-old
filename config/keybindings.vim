@@ -52,9 +52,9 @@ nnoremap          <ESC>^[ <ESC>^[
 
 " Function keys.
 nmap <F3> :VimFilerExplorer<CR>
-nmap <F4> :YRShow<CR>
-nmap <F5> :CtrlP<CR>
-nmap <F6> :UndotreeToggle<CR>
+nmap <F5> :YRShow<CR>
+nmap <F6> :CtrlP<CR>
+nmap <F7> :UndotreeToggle<CR>
 
 " Plugin: CtrlP
 nnoremap <Leader>f :CtrlP<CR>
