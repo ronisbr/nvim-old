@@ -24,23 +24,9 @@ let g:vimfiler_ignore_pattern = [
 " TODO: Create gloobus-preview package for openSUSE.
 " let g:vimfiler_quick_look_command = 'gloobus-preview'
 
-call vimfiler#custom#profile('default', 'context', {
-            \ 'auto_expand': 1,
-            \ 'columns' : 'type:size:time',
-            \ 'direction' : 'topleft',
-            \ 'explorer_columns' : 'type',
-            \ 'hidden': 1,
-            \ 'parent': 1,
-            \ 'split' : 0,
-            \ 'status' : 1,
-            \ 'toggle' : 1,
-            \ 'winminwidth' : 30})
-
 augroup vfinit
     au!
     autocmd FileType vimfiler call s:vimfilerinit()
-    autocmd BufEnter * if (winnr('$') == 1 && &filetype ==# 'vimfiler') |
-                \ q | endif
 augroup END
 
 function! s:vimfilerinit()
