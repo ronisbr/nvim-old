@@ -84,6 +84,9 @@ set splitright
 " Set wrapping.
 set wrap linebreak nolist
 
+" Enable use of mouse in all modes.
+set mouse=a
+
 " Disable error/visual bell.
 " set noerrorbells visualbell t_vb=
 " autocmd GUIEnter * set visualbell t_vb=
