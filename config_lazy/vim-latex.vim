@@ -6,6 +6,10 @@ let g:Tex_MultipleCompileFormats = 'pdf, aux'
 let g:Tex_CompileRule_pdf        = 'pdflatex -interaction=nonstopmode -synctex=1'
 let g:tex_conceal                = ""
 
+" Enable advanced math.
+" This is necessary for key mappings like <M-b> => \mathbf{}.
+let g:Tex_AdvancedMath = 1
+
 " Switch to `pdflatex`.
 function SetpdfLaTeX()
     let g:Tex_CompileRule_pdf = 'pdflatex --interaction=nonstopmode -synctex=1'
