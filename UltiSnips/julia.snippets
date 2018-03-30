@@ -30,7 +30,7 @@ def get_julia_args(func_decl):
     output = ""
     if (len(args) > 1) or ( (len(args) == 1) and (len(args[0]) > 0) ):
         for a in args:
-            output += "* " + a.split('::',1)[0].strip() + ": \n"
+            output += "* " + a.split('::',1)[0].strip() + ": <++>\n"
     else:
 	    output += "\n"
 

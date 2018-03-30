@@ -47,6 +47,9 @@ set pastetoggle=<F4>
 nnoremap <silent> <ESC>   :noh<CR><ESC>
 nnoremap          <ESC>^[ <ESC>^[
 
+" Go to the next placeholder.
+inoremap <C-j> <Esc>/<+.*+><CR><Esc>cf>
+
 " Plugins key bindings
 " ====================
 
