@@ -30,7 +30,7 @@ def get_julia_args(func_decl):
     output = ""
     if (len(args) > 1) or ( (len(args) == 1) and (len(args[0]) > 0) ):
         for a in args:
-            output += "* " + a.split('::',1)[0].strip() + ": <++>\n"
+            output += "* `" + a.split('::',1)[0].strip() + "`: <++>\n"
     else:
 	    output += "\n"
 
@@ -43,18 +43,18 @@ endglobal
 
 snippet jlc "Julia function comment"
 """
-### $1`!p snip.rv = julia_func_decl_oneline(snip.v.text)`
+    $1`!p snip.rv = julia_func_decl_oneline(snip.v.text)`
 
 $2
 
-##### Args
+# Args
 
 $3`!p snip.rv = get_julia_args(snip.v.text)`
-##### Returns
+# Returns
 
 * $4
 
-##### Info
+# Info
 
 * **Author**: ${5:Ronan Arraes Jardim Chagas}
 * **Date**: ${6:`date +%Y-%m-%d`}
@@ -66,14 +66,14 @@ endsnippet
 
 snippet jlcni "Julia function comment without info"
 """
-### $1`!p snip.rv = julia_func_decl_oneline(snip.v.text)`
+    $1`!p snip.rv = julia_func_decl_oneline(snip.v.text)`
 
 $2
 
-##### Args
+# Args
 
 $3`!p snip.rv = get_julia_args(snip.v.text)`
-##### Returns
+# Returns
 
 * $4
 
@@ -84,15 +84,15 @@ endsnippet
 
 snippet jlcna "Julia function comment without args"
 """
-### $1`!p snip.rv = julia_func_decl_oneline(snip.v.text)`
+    $1`!p snip.rv = julia_func_decl_oneline(snip.v.text)`
 
 $2
 
-##### Returns
+# Returns
 
 * $3
 
-##### Info
+# Info
 
 * **Author**: ${4:Ronan Arraes Jardim Chagas}
 * **Date**: ${5:`date +%Y-%m-%d`}
@@ -104,11 +104,11 @@ endsnippet
 
 snippet jlcnai "Julia function comment without args and info"
 """
-### $1`!p snip.rv = julia_func_decl_oneline(snip.v.text)`
+    $1`!p snip.rv = julia_func_decl_oneline(snip.v.text)`
 
 $2
 
-##### Returns
+# Returns
 
 * $3
 
@@ -119,14 +119,14 @@ endsnippet
 
 snippet jlcnr "Julia function comment without returns"
 """
-### $1`!p snip.rv = julia_func_decl_oneline(snip.v.text)`
+    $1`!p snip.rv = julia_func_decl_oneline(snip.v.text)`
 
 $2
 
-##### Args
+# Args
 
 $3`!p snip.rv = get_julia_args(snip.v.text)`
-##### Info
+# Info
 
 * **Author**: ${4:Ronan Arraes Jardim Chagas}
 * **Date**: ${5:`date +%Y-%m-%d`}
@@ -138,11 +138,11 @@ endsnippet
 
 snippet jlcnri "Julia function comment without returns and info"
 """
-### $1`!p snip.rv = julia_func_decl_oneline(snip.v.text)`
+    $1`!p snip.rv = julia_func_decl_oneline(snip.v.text)`
 
 $2
 
-##### Args
+# Args
 
 $3`!p snip.rv = get_julia_args(snip.v.text)`
 """
@@ -151,11 +151,11 @@ endsnippet
 
 snippet jlcnar "Julia function comment without args and returns"
 """
-### $1`!p snip.rv = julia_func_decl_oneline(snip.v.text)`
+    $1`!p snip.rv = julia_func_decl_oneline(snip.v.text)`
 
 $2
 
-##### Info
+# Info
 
 * **Author**: ${3:Ronan Arraes Jardim Chagas}
 * **Date**: ${4:`date +%Y-%m-%d`}
@@ -167,7 +167,7 @@ endsnippet
 
 snippet jlcnari "Julia function comment without args, returns, and info"
 """
-### $1`!p snip.rv = julia_func_decl_oneline(snip.v.text)`
+    $1`!p snip.rv = julia_func_decl_oneline(snip.v.text)`
 
 $2
 
