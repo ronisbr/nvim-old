@@ -8,6 +8,7 @@ if dein#load_state(expand('~/.nvim/dein'))
 
     call dein#add('airblade/vim-rooter')
     call dein#add('chriskempson/base16-vim')
+    call dein#add('godlygeek/tabular')
     call dein#add('JuliaEditorSupport/julia-vim')
     call dein#add('justinmk/vim-sneak')
     call dein#add('ntpeters/vim-better-whitespace')
