@@ -50,6 +50,9 @@ nnoremap          <ESC>^[ <ESC>^[
 " Go to the next placeholder.
 inoremap <C-j> <Esc>/<+.*+><CR><Esc>cf>
 
+" Break the line in normal mode.
+nmap <C-j> a<CR><ESC>l
+
 " Plugins key bindings
 " ====================
 
