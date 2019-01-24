@@ -57,7 +57,7 @@ nmap <C-j> a<CR><ESC>l
 " ====================
 
 " Function keys.
-nmap <F3> :VimFilerExplorer<CR>
+nmap <F3> :Defx -split=vertical -winwidth=50 -direction=topleft<CR>
 nmap <F5> :YRShow<CR>
 nmap <F6> :CtrlP<CR>
 nmap <F7> :UndotreeToggle<CR>

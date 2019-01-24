@@ -12,10 +12,10 @@ if dein#load_state(expand(conf_dir . 'dein'))
     call dein#add('junegunn/vim-easy-align')
     call dein#add('justinmk/vim-sneak')
     call dein#add('ntpeters/vim-better-whitespace')
+    call dein#add('Shougo/defx.nvim')
     call dein#add('Shougo/denite.nvim')
-    call dein#add('Shougo/dein.vim')
+    call dein#add(expand(conf_dir . 'dein/repos/github.com/Shougo/dein.vim'))
     call dein#add('Shougo/deoplete.nvim')
-    call dein#add('Shougo/vimfiler.vim')
     call dein#add('sirver/ultisnips')
     call dein#add('tpope/vim-fugitive')
     call dein#add('vim-airline/vim-airline')
@@ -42,12 +42,8 @@ if dein#load_state(expand(conf_dir . 'dein'))
                 \   'on_ft':            ['bibtex', 'tex', 'plaintex']})
 
     call dein#end()
-
     call dein#save_state()
 endif
-
-call dein#call_hook('source')
-call dein#call_hook('post_source')
 
 filetype plugin indent on
 syntax   on
