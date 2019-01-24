@@ -1,21 +1,31 @@
+" Configuration directory.
+let g:conf_dir=$HOME . '/.nvim/'
+
+" Share direction.
+let g:share_dir=$HOME . '/.local/share/nvim/'
+
+if finddir(g:share_dir) ==# ''
+    silent call mkdir(g:share_dir)
+endif
+
 " Configure dein - plugin manager.
 if has('vim_starting')
     if &compatible
         set nocompatible
     endif
 
-    set runtimepath+=~/.nvim/dein/repos/github.com/Shougo/dein.vim
+    let &runtimepath=&runtimepath . ',' . conf_dir . 'dein/repos/github.com/Shougo/dein.vim'
 endif
 
-source ~/.nvim/plugins.vim
+exe 'source ' . conf_dir . 'plugins.vim'
 
 " Configurations.
-for fpath in split(globpath('~/.nvim/config/', '*.vim'), '\n')
+for fpath in split(globpath(conf_dir . 'config/', '*.vim'), '\n')
     exe 'source' fpath
 endfor
 
 " Syntax.
-for fpath in split(globpath('~/.nvim/syntax/', '*.vim'), '\n')
+for fpath in split(globpath(conf_dir . 'syntax/', '*.vim'), '\n')
     exe 'source' fpath
 endfor
 

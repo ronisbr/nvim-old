@@ -1,5 +1,5 @@
 " Plugin configuration: vim-latex
-" ===============================
+" ==============================================================================
 
 let g:Tex_DefaultTargetFormat    = 'pdf'
 let g:Tex_MultipleCompileFormats = 'pdf, aux'
@@ -32,8 +32,8 @@ augroup FileType_LaTeX
     autocmd FileType tex noremap <Leader>lcx :<C-U>call SetXeLaTeX()<CR>
 augroup END
 
-" Options that depend on the OS.
-" ==============================
+" Options that depend on the OS
+" ==============================================================================
 
 if has('osx') || has('macunix')
     let g:Tex_ViewRule_pdf = 'Skim'

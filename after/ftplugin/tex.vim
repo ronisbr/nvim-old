@@ -1,5 +1,5 @@
 " File type configuration: TeX files
-" ==================================
+" ==============================================================================
 
 setlocal tw=0
 setlocal softtabstop=2

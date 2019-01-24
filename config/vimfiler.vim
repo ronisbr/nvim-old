@@ -1,6 +1,6 @@
 " Plugin configuration: vimfiler
-" ==============================
-"
+" ==============================================================================
+
 " Configuration obtained from SpaceVim project.
 
 let g:vimfiler_as_default_explorer = 1

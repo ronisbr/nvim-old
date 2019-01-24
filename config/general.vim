@@ -1,15 +1,10 @@
 " General configuration
-" =====================
+" ==============================================================================
 
 " Folders to store backups, undo files, and swap files.
-let g:data_dir   = $HOME . '/.nvim/data/'
-let g:backup_dir = g:data_dir . 'backup'
-let g:swap_dir   = g:data_dir . 'swap'
-let g:undo_dir   = g:data_dir . 'undo'
-
-if finddir(g:data_dir) ==# ''
-    silent call mkdir(g:data_dir)
-endif
+let g:backup_dir = g:share_dir   . 'backup'
+let g:swap_dir   = g:share_dir   . 'swap'
+let g:undo_dir   = g:share_dir   . 'undo'
 
 if finddir(g:backup_dir) ==# ''
     silent call mkdir(g:backup_dir)
@@ -23,21 +18,19 @@ if finddir(g:undo_dir) ==# ''
     silent call mkdir(g:undo_dir)
 endif
 
-unlet g:data_dir
-unlet g:backup_dir
-unlet g:swap_dir
-unlet g:undo_dir
-
-" Configure backups, undo history, and swap files.
 set backup
-set backupdir=~/.nvim/data/backup
+let &backupdir=g:backup_dir
 
-set directory=~/.nvim/data/swap
+let &directory=g:swap_dir
 
 set undofile
 set undolevels=1000
 set undoreload=10000
-set undodir=~/.nvim/data/undo
+let &undodir=g:undo_dir
+
+unlet g:backup_dir
+unlet g:swap_dir
+unlet g:undo_dir
 
 " Set hidden.
 set hidden
@@ -59,9 +52,6 @@ set expandtab
 " Set comments mark.
 set comments +=fb:-,fb:_
 
-" Set virtual editing for Visual Block mode
-set virtualedit=block
-
 " Set line numbers.
 set number
 set relativenumber
@@ -77,18 +67,11 @@ set smartcase
 set splitbelow
 set splitright
 
-" This unset the "last search pattern" register by hitting return after a
-" search.
-" nnoremap    <silent>    <CR>    :call HLNextOff()<CR>:nohlsearch<CR>
-
 " Set wrapping.
 set wrap linebreak nolist
 
 " Enable use of mouse in all modes.
 set mouse=a
 
-" Disable error/visual bell.
-" set noerrorbells visualbell t_vb=
-" autocmd GUIEnter * set visualbell t_vb=
-
-let g:clang_cpp_options = '-std=c++11 -stdlib=libc++ -I/usr/include/Qt -I/usr/include/QtGui'
+" Show column one character after the text width.
+set colorcolumn=+1

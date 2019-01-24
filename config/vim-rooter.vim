@@ -1,5 +1,5 @@
 " Plugin configuration: vim-rooter
-" ================================
+" ==============================================================================
 
 " Change root for the current window only.
 let g:rooter_use_lcd = 1

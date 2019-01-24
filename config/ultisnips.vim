@@ -1,5 +1,5 @@
 " Plugin configuration: ultisnips
-" ===============================
+" ==============================================================================
 
 " Trigger configuration.
 let g:UltiSnipsExpandTrigger="<TAB>"

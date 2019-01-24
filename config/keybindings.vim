@@ -1,16 +1,16 @@
 " Key bindings
-" ============
+" ==============================================================================
 
-" Save file with C-S
+" Save file with C-S.
 nmap <C-s> :w<CR>
 imap <C-s> <ESC>:w<CR>li
 vmap <C-s> <ESC>:w<CR>
 
-" Navigation through buffers
+" Navigation through buffers.
 nmap <Leader>, :bprevious<CR>
 nmap <Leader>. :bnext<CR>
 
-" Spell check
+" Spell check.
 nnoremap <Leader>sc  :set spell<CR>
 nnoremap <Leader>nsc :set nospell<CR>
 
@@ -62,7 +62,7 @@ nmap <F5> :YRShow<CR>
 nmap <F6> :CtrlP<CR>
 nmap <F7> :UndotreeToggle<CR>
 
-" Plugin: CtrlP
+" Plugin: CtrlP.
 nnoremap <Leader>f :CtrlP<CR>
 nnoremap <Leader>b :CtrlPBuffer<CR>
 nnoremap <Leader>m :CtrlPMRUFiles<CR>

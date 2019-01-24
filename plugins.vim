@@ -1,18 +1,18 @@
 " Dein configuration
-" ==================
+" ==============================================================================
 
 let g:dein#enable_notification = 1
 
-if dein#load_state(expand('~/.nvim/dein'))
-    call dein#begin(expand('~/.nvim/dein'))
+if dein#load_state(expand(conf_dir . 'dein'))
+    call dein#begin(expand(conf_dir . 'dein'))
 
     call dein#add('airblade/vim-rooter')
     call dein#add('chriskempson/base16-vim')
-    call dein#add('godlygeek/tabular')
     call dein#add('JuliaEditorSupport/julia-vim')
+    call dein#add('junegunn/vim-easy-align')
     call dein#add('justinmk/vim-sneak')
     call dein#add('ntpeters/vim-better-whitespace')
-    call dein#add('Shougo/unite.vim')
+    call dein#add('Shougo/denite.nvim')
     call dein#add('Shougo/dein.vim')
     call dein#add('Shougo/deoplete.nvim')
     call dein#add('Shougo/vimfiler.vim')
@@ -53,6 +53,6 @@ filetype plugin indent on
 syntax   on
 
 " Load local plugins
-" ==================
+" ==============================================================================
 
-source ~/.nvim/local_plugins/dragvisuals.vim
+exe 'source ' . conf_dir . 'local_plugins/dragvisuals.vim'
