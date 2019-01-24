@@ -1,7 +1,7 @@
 " Configuration directory.
 let g:conf_dir=$HOME . '/.nvim/'
 
-" Share direction.
+" Share directory.
 let g:share_dir=$HOME . '/.local/share/nvim/'
 
 if finddir(g:share_dir) ==# ''
