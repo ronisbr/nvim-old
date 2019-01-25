@@ -53,6 +53,9 @@ inoremap <C-j> <Esc>/<+.*+><CR><Esc>cf>
 " Break the line in normal mode.
 nmap <C-j> a<CR><ESC>l
 
+" Exit terminal by pressing <ESC>.
+tnoremap <ESC> <C-\><C-n>
+
 " Plugins key bindings
 " ====================
 
