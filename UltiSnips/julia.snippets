@@ -47,12 +47,51 @@ snippet jlc "Julia function comment"
 
 $2
 
+# Args
+
+$3`!p snip.rv = get_julia_args(snip.v.text)`
+# Returns
+
+* $4
+
+"""
+${VISUAL}$0
+endsnippet
+
+snippet jlcna "Julia function comment without args"
+"""
+    $1`!p snip.rv = julia_func_decl_oneline(snip.v.text)`
+
+$2
+
 # Returns
 
 * $3
 
 """
+${VISUAL}$0
+endsnippet
 
+snippet jlcnr "Julia function comment without returns"
+"""
+    $1`!p snip.rv = julia_func_decl_oneline(snip.v.text)`
+
+$2
+
+# Args
+
+$3`!p snip.rv = get_julia_args(snip.v.text)`
+"""
+${VISUAL}$0
+endsnippet
+
+snippet jlcnar "Julia function comment without args, and returns"
+"""
+    $1`!p snip.rv = julia_func_decl_oneline(snip.v.text)`
+
+$2
+
+"""
 ${VISUAL}$0
 endsnippet
 
