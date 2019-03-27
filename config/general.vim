@@ -75,3 +75,7 @@ set mouse=a
 
 " Show column one character after the text width.
 set colorcolumn=+1
+
+" Lazy redraw can improve in usability in some cases that make scrolling too
+" much slow using `cursorline` and syntax highlight.
+set lazyredraw
