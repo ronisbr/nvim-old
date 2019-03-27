@@ -6,6 +6,8 @@ let g:dein#enable_notification = 1
 if dein#load_state(expand(conf_dir . 'dein'))
     call dein#begin(expand(conf_dir . 'dein'))
 
+    call dein#add(expand(conf_dir . 'dein/repos/github.com/Shougo/dein.vim'))
+
     call dein#add('airblade/vim-rooter')
     call dein#add('JuliaEditorSupport/julia-vim')
     call dein#add('junegunn/vim-easy-align')
@@ -14,7 +16,6 @@ if dein#load_state(expand(conf_dir . 'dein'))
     call dein#add('ntpeters/vim-better-whitespace')
     call dein#add('Shougo/defx.nvim')
     call dein#add('Shougo/denite.nvim')
-    call dein#add(expand(conf_dir . 'dein/repos/github.com/Shougo/dein.vim'))
     call dein#add('Shougo/deoplete.nvim')
     call dein#add('sirver/ultisnips')
     call dein#add('tpope/vim-fugitive')
