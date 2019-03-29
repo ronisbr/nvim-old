@@ -8,6 +8,7 @@ if dein#load_state(expand(conf_dir . 'dein'))
 
     call dein#add(expand(conf_dir . 'dein/repos/github.com/Shougo/dein.vim'))
 
+    call dein#add('airblade/vim-gitgutter')
     call dein#add('airblade/vim-rooter')
     call dein#add('JuliaEditorSupport/julia-vim')
     call dein#add('junegunn/vim-easy-align')
