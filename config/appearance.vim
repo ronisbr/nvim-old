@@ -2,6 +2,7 @@
 " ==============================================================================
 
 let myterm=$TERM
+set termguicolors
 
 " Theme: gruvbox
 let g:gruvbox_invert_selection=0
