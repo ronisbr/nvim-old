@@ -1,8 +1,6 @@
 " Dein configuration
 " ==============================================================================
 
-let g:dein#enable_notification = 1
-
 if dein#load_state(expand(conf_dir . 'dein'))
     call dein#begin(expand(conf_dir . 'dein'))
 
