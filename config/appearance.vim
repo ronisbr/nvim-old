@@ -4,7 +4,7 @@
 let myterm=$TERM
 set termguicolors
 
-" Theme: gruvbox
-let g:gruvbox_invert_selection=0
-colorscheme gruvbox
+" Theme: one
 set background=dark
+let g:one_allow_italics = 1
+colorscheme one
