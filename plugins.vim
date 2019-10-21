@@ -11,6 +11,7 @@ if dein#load_state(expand(conf_dir . 'dein'))
     call dein#add('JuliaEditorSupport/julia-vim')
     call dein#add('junegunn/vim-easy-align')
     call dein#add('justinmk/vim-sneak')
+    call dein#add('liuchengxu/vim-clap')
     call dein#add('morhetz/gruvbox')
     call dein#add('ntpeters/vim-better-whitespace')
     call dein#add('rakr/vim-one')
@@ -26,15 +27,8 @@ if dein#load_state(expand(conf_dir . 'dein'))
     call dein#add('wsdjeg/dein-ui.vim')
 
     " Plugins with lazy load.
-    call dein#add('ctrlpvim/ctrlp.vim',
-                \ { 'hook_post_source': 'source ~/.nvim/config_lazy/ctrlp.vim',
-                \   'on_cmd':           'CtrlP'})
-
     call dein#add('mbbill/undotree',
                 \ { 'on_cmd':           'UndotreeToggle'})
-
-    call dein#add('mhinz/vim-grepper',
-                \ { 'on_cmd':           'Grepper'})
 
     call dein#add('terryma/vim-multiple-cursors',
                 \ { 'hook_post_source': 'source ~/.nvim/config_lazy/vim-multiple-cursors.vim',

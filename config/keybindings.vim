@@ -65,12 +65,6 @@ nmap <F5> :YRShow<CR>
 nmap <F6> :CtrlP<CR>
 nmap <F7> :UndotreeToggle<CR>
 
-" Plugin: CtrlP.
-nnoremap <Leader>f :CtrlP<CR>
-nnoremap <Leader>b :CtrlPBuffer<CR>
-nnoremap <Leader>m :CtrlPMRUFiles<CR>
-nnoremap <Leader>t :CtrlPTag<CR>
-
 " Plugin: Drag visuals.
 vmap <expr> <S-Left>  DVB_Drag('left')
 vmap <expr> <S-Right> DVB_Drag('right')
@@ -82,6 +76,13 @@ let  g:DVB_TrimWS = 1
 " Plugin: vim-better-whitespace.
 nmap <Leader>sws :StripWhitespace<CR>
 nmap <Leader>tws :ToggleWhitespace<CR>
+
+" Plugin: vim-clap.
+nnoremap <Leader>f :Clap files<CR>
+nnoremap <Leader>b :Clap buffers<CR>
+nnoremap <Leader>g :Clap grep<CR>
+nnoremap <Leader>h :Clap history<CR>
+nnoremap <Leader>j :Clap jumps<CR>
 
 " Plugin: vim-rooter
 nmap <Leader>cd :Rooter<CR>
