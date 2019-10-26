@@ -23,7 +23,6 @@ if dein#load_state(expand(conf_dir . 'dein'))
     call dein#add('tpope/vim-surround')
     call dein#add('vim-airline/vim-airline')
     call dein#add('vim-airline/vim-airline-themes')
-    call dein#add('vim-scripts/YankRing.vim')
     call dein#add('wsdjeg/dein-ui.vim')
 
     " Plugins with lazy load.
