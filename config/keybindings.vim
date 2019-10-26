@@ -78,11 +78,12 @@ nmap <Leader>sws :StripWhitespace<CR>
 nmap <Leader>tws :ToggleWhitespace<CR>
 
 " Plugin: vim-clap.
-nnoremap <Leader>f :Clap files<CR>
-nnoremap <Leader>b :Clap buffers<CR>
-nnoremap <Leader>g :Clap grep<CR>
-nnoremap <Leader>h :Clap history<CR>
-nnoremap <Leader>j :Clap jumps<CR>
+nnoremap <Leader>cf :Clap files<CR>
+nnoremap <Leader>cb :Clap buffers<CR>
+nnoremap <Leader>cg :Clap grep<CR>
+nnoremap <Leader>ch :Clap history<CR>
+nnoremap <Leader>cj :Clap jumps<CR>
+nnoremap <Leader>cy :Clap yanks<CR>
 
 " Plugin: vim-rooter
 nmap <Leader>cd :Rooter<CR>
