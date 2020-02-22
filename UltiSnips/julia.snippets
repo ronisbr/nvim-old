@@ -19,9 +19,9 @@ def julia_func_decl_oneline(func_decl):
 	# If the first word is `macro`, then replace it with `@`.
 	output = re.sub('^macro ', '@', output)
 
-	# If there is a `=`, then it must be a one-line declaration. In this case,
+	# If there is a `) =`, then it should be a one-line declaration. In this case,
 	# remove everything after it.
-	output = re.sub('=.*$', '', output)
+	output = re.sub('\)[\s].*=.*$', ')', output)
 
 	return output.strip()
 
