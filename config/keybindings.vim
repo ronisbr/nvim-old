@@ -61,9 +61,7 @@ tnoremap <ESC> <C-\><C-n>
 
 " Function keys.
 nmap <F3> :Defx -split=vertical -winwidth=50 -direction=topleft<CR>
-nmap <F5> :YRShow<CR>
-nmap <F6> :CtrlP<CR>
-nmap <F7> :UndotreeToggle<CR>
+nmap <F4> :UndotreeToggle<CR>
 
 " Plugin: Drag visuals.
 vmap <expr> <S-Left>  DVB_Drag('left')
