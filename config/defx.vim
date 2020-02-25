@@ -64,11 +64,17 @@ function! s:defx_my_settings() abort
                 \ defx#do_action('change_vim_cwd')
     nnoremap <silent><buffer><expr> <backspace>
                 \ defx#do_action('cd', '..')
+    nnoremap <silent><buffer><expr> >
+                \ defx#do_action('open_or_close_tree')
 endfunction
 
 " Like Textmate icons.
 call defx#custom#column('mark', {
-            \ 'directory_icon': '▸',
             \ 'readonly_icon': '✗',
             \ 'selected_icon': '✓',
+            \ })
+
+call defx#custom#column('icon', {
+            \ 'directory_icon': '',
+            \ 'opened_icon': '',
             \ })
